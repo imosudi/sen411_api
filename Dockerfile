@@ -15,6 +15,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the application
-#CMD ["python", "app/server.py"]
-CMD ["python", "-m", "app.server"]
-
+CMD ["python", "server.py"]
