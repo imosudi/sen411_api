@@ -14,6 +14,11 @@ def create_app():
     # Import schema here to avoid circular import issues
     from .schema import schema
     
+    @app.route('/', methods=['GET'])
+    def home():
+        
+        return '<h1> <a href="/graphql"> API End-point </a> </h1>'
+    
     # Set up GraphQL endpoint
     app.add_url_rule(
         '/graphql', 
